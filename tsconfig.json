@@ -2,7 +2,9 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "*": ["@types/*"]
+      "*": [
+        "@types/*"
+      ]
     },
     "outDir": "./dist",
     "experimentalDecorators": true,
