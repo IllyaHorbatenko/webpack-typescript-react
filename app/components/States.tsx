@@ -5,11 +5,11 @@ import {connect} from 'react-redux';
 import {loadStates} from '../store/actions/states';
 
 @autobind
-// @connect((store)=>{
-//     return {
-//         states: store.states
-//     };
-// })
+@connect((store)=>{
+    return {
+        states: store.states
+    };
+})
 class States extends React.Component<any, any> {
     componentWillMount() {
         this.props.dispatch(loadStates())
